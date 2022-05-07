@@ -11,6 +11,6 @@ print('*' * 50)
 # Using list.sort()
 print('Using list.sort() built in list method : ')
 print('Actual List content before sorting :' , list_variable)
-print('Sorted() :' , list_variable.sort())
+print('list.sort() :' , list_variable.sort())
 print('Now printing the list content again :' , list_variable)
 # Seems list.sort() stored the sorted list content in the passed list object
