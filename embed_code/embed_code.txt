@@ -1,0 +1,13 @@
+
+2 ways to embed python code in Blog
+
+    Use trinket and copy iframe into blog HTML code
+    Use repl ( URL : https://replit.com ) and in blog HTML code add this line
+
+<iframe frameborder="0" width="100%" height="100%" src="{YOUR REPL URL}?lite=true"></iframe>
+
+Example : (container custom css I have added in local publii settings)
+
+<div class="container">
+<iframe frameborder="0" width="100%" height="100%" src="https://replit.com/@KarthikeyanMut1/Pickling?lite=true"></iframe>
+</div>
