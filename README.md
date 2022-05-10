@@ -6,5 +6,5 @@
 Example : (container custom css I have added in local publii settings)
 
  <div class="container">
-  <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@KarthikeyanMut1/Pickling?lite=true"></iframe>
+  <iframe frameborder="0" width="100%" height="100%" src="https://replit.com/@KarthikeyanMut1/Pickling?lite=true"></iframe>
 </div> 
