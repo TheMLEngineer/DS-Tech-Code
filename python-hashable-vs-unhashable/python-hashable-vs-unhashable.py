@@ -3,7 +3,7 @@
 string_variable = 'abc'
 print('String variable hash value :' , hash(string_variable))
 
-# ALl functions in Python is hashable
+# All functions in Python is hashable
 def fn():
   print('Hi')
 print('Hash Value of a function :' , hash(fn))
