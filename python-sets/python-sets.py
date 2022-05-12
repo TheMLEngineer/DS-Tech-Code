@@ -1,4 +1,5 @@
-
+# Creating set with unhashable element(list) inside will create TypeError
+print('Creating set with unhashable element :' , {[1,2,3]})
 
 ##############################################################################################
 # Creating sets
