@@ -17,7 +17,12 @@ print('*'*50)
 del list_variable[0]
 print(list_variable)
 print('*'*50)
-
+# What if we use * on Lists
+# if we multiply by 1 or higher list elemensts are duplicated that many times
+print([1,2] * 2)
+# If we multiply by 0 or -ve numbers , empty list is returned
+print([1,2] * -2)
+print('*'*50)
 
 
 ##############################################################################################
