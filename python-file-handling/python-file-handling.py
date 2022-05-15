@@ -14,58 +14,32 @@ import os
 
 # CRUD Operations on Files
 
-# If we use with , no need to manually close file pointer
-file_pointer =  open('new_file.txt' , 'a+')
+f = open("demofile.txt", "a+")
 # Writing in file
-for i in range(1 , 4):
-    print(f'This is line number {i}\n')
-    file_pointer.write(f'This is line number {i}\n')
+# Just writing into file
+f.write("Adding more content!\n")
 
 # Reading from file
-# Reading as string
-string_in_file = file_pointer.read()
 # Reading as list
-list_in_file = file_pointer.readlines()
-print('String content in new_file.txt :' , string_in_file)
-print('List content in new_file.txt :' , list_in_file)
+f.seek(0)
+list_in_file = f.readlines()
+print('List content in demofile.txt :' , list_in_file)
 
 # Update Content In File
 l = []
 for line in list_in_file:
-    l.append(line.replace('This is' , 'This is updated '))
-    file_pointer.write('\n'.join(l))
+    l.append(line.replace('Adding' , 'This is updated '))
+    f.write('\n'.join(l))
 
-    
+f.close()
 # Deleting File content
-with open('new_file.txt' , 'w') as fp:
+with open('demofile.txt' , 'w') as fp:
     # Deleting all new line characters
     for line in list_in_file:
         if 'This' in line:
             fp.write(line)
 
-# Deleting file itself
-#os.remove('new_file.txt')
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-##############################################################################################
-
-##############################################################################################
-
-##############################################################################################
+#Deleting file itself
+os.remove('demofile.txt')
 
 ##############################################################################################
