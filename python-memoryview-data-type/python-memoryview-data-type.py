@@ -24,7 +24,7 @@ import timeit
 
 #Increasing data size
 bytes_data = b'Sample String' * 5000
-# Code logic for deleting first index value of given data
+# Code logic for deleting first index value of given data repeatedly
 bytes_time = timeit.timeit('while bytes_data: bytes_data = bytes_data[1:]', "from __main__ import bytes_data")
 memory_view_data = memoryview(bytes_data)
 memory_view_time = timeit.timeit('while memory_view_data: memory_view_data = memory_view_data[1:]', "from __main__ import memory_view_data")
