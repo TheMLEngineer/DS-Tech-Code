@@ -20,3 +20,12 @@ It can be achieved by using triple quotes
 print('Hi')
 
 ##############################################################################################
+
+# Multi line string as an function document
+def function():
+    '''This is function documentation'''
+    print('Hi')
+
+print(function.__doc__)
+
+##############################################################################################
