@@ -1,6 +1,18 @@
 
 
+# Arithmatic
+a = 3
+b = 5
 
+print('a value :' , a)
+print('b value :' , b)
+print('a + b :' , a + b)
+print('a - b :' , a - b)
+print('a * b :' , a * b)
+print('a / b :' , a / b)
+print('a % b :' , a % b)
+print('a ** b :' , a ** b)
+print('a // b :' , a // b)
 
 ##############################################################################################
 
